@@ -23,7 +23,7 @@ const useSelectGenderForm = () => {
 
   const handleSubmitButton = () => {
     if (gender && desiredGender) {
-      router.push(`/${desiredGender}`);
+      router.push(`/onboarding/${desiredGender}`);
     }
   };
 

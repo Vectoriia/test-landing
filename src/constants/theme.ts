@@ -1,4 +1,4 @@
-import { createTheme } from '@mui/material';
+import { createTheme, outlinedInputClasses } from '@mui/material';
 
 const theme = createTheme({
   palette: {
@@ -70,6 +70,58 @@ const theme = createTheme({
         },
       },
     },
+    MuiInputBase: {
+      styleOverrides: {
+        root: {
+          [`&.${outlinedInputClasses.root}`]: {
+            padding: '1.3rem 1.6rem',
+            borderRadius: '1.2rem',
+            border: 'none',
+            backgroundColor: '#F1F1F1',
+            fontFamily: 'Linotte, sans-serif',
+            fontSize: '1.8rem',
+            fontWeight: 400,
+            lineHeight: '120%',
+            color: '#000000',
+            '&:hover': {
+              border: 'none',
+              backgroundColor: '#fbfcfc',
+            },
+            '&.Mui-error': {
+              border: 'none',
+              backgroundColor: '#FFEEEC',
+              color: '#FF4931',
+            },
+            '&.Mui-focused': {
+              padding: '1.2rem 1.5rem',
+              border: '0.1rem solid #000000',
+              backgroundColor: '#ffffff',
+              color: '#000000',
+            },
+            fieldset: {
+              border: 'none',
+              top: 0,
+              legend: {
+                display: 'none',
+              },
+            },
+          },
+          '& input::placeholder': {
+            fontFamily: 'Linotte, sans-serif',
+            color: '#B4B6BB',
+            opacity: 1,
+            fontSize: '1.8rem',
+            fontWeight: 400,
+            lineHeight: '120%',
+          },
+        },
+        input: {
+          [`&.${outlinedInputClasses.input}`]: {
+            padding: 0,
+          },
+        },
+      },
+    },
   },
   typography: {
     fontFamily: 'Linotte, sans-serif',
@@ -80,6 +132,13 @@ const theme = createTheme({
       lineHeight: '120%',
       color: '#000000',
     }, //h1
+    h2: {
+      fontFamily: 'Linotte, sans-serif',
+      fontSize: '2.4rem',
+      fontWeight: 700,
+      lineHeight: '120%',
+      color: '#000000',
+    }, //h2
     body1: {
       fontFamily: 'Linotte, sans-serif',
       fontSize: '1.8rem',
@@ -90,6 +149,13 @@ const theme = createTheme({
     body2: {
       fontFamily: 'Linotte, sans-serif',
       fontSize: '1.4rem',
+      fontWeight: 400,
+      lineHeight: '120%',
+      color: '#000000',
+    },
+    subtitle1: {
+      fontFamily: 'Linotte, sans-serif',
+      fontSize: '1.6rem',
       fontWeight: 400,
       lineHeight: '120%',
       color: '#000000',
