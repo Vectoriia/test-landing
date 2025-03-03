@@ -15,3 +15,7 @@ export default async function OnBoarding({ params }: OnBoardingProps) {
 
   return <OnboardingContent />;
 }
+
+export async function generateStaticParams() {
+  return [{ slug: 'man' }, { slug: 'woman' }];
+}
