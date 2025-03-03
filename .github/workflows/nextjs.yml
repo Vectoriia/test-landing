@@ -25,18 +25,6 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  #Create env file
-  create-envfile:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Create env file
-        run: |
-          touch .env.local
-          echo NODE_ENV='production' >> .env.local
-          echo NEXT_PUBLIC_BASE_PATH='/test-landing' >> .env.local
-          cat .env.local
-
   # Build job
   build:
     runs-on: ubuntu-latest
