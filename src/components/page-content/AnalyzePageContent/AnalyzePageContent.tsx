@@ -22,7 +22,7 @@ export default function AnalyzePageContent() {
     <Box className="flex flex-col items-center justify-center h-[100vh] w-[100vw] py-[1.6rem] px-[1.6rem]">
       <Box className="w-[7.4rem] h-[3rem] absolute top-[1.6rem]">
         <Image
-          src="/kismia_logo.svg"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/kismia_logo.svg`}
           alt="Logo"
           width={0}
           height={0}

@@ -3,7 +3,7 @@ import type { NextConfig } from 'next';
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig: NextConfig = {
-  basePath: '/test-landing',
+  basePath: isProd ? '/test-landing' : '',
   assetPrefix: isProd ? '/test-landing/' : '',
   output: 'export',
   distDir: 'dist',

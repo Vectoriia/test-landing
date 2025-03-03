@@ -8,7 +8,7 @@ export default function HomePageContent() {
       <Box className="flex flex-col items-center justify-center gap-[2.283rem]">
         <Box className="w-[7.4rem] h-[3rem]">
           <Image
-            src="/kismia_logo.svg"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/kismia_logo.svg`}
             alt="Logo"
             width={0}
             height={0}
