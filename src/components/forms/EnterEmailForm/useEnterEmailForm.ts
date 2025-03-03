@@ -9,11 +9,7 @@ const useEnterEmailForm = ({ handleNext }: OnboardingStepProps) => {
 
   const validateEmail = useCallback(
     throttle((value: string) => {
-      if (!value) {
-        setIsValid(false);
-      } else if (!value.includes('@')) {
-        setIsValid(false);
-      } else if (!EMAIL_REGEX.test(value)) {
+      if (!EMAIL_REGEX.test(value)) {
         setIsValid(false);
       } else {
         setIsValid(true);
@@ -27,9 +23,10 @@ const useEnterEmailForm = ({ handleNext }: OnboardingStepProps) => {
   };
 
   const handleSubmitButton = () => {
-    if (isValid) {
-      handleNext();
+    if (!isValid) {
+      return;
     }
+    handleNext();
   };
 
   return {
