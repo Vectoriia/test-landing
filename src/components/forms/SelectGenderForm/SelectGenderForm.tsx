@@ -12,7 +12,7 @@ export default function SelectGenderForm() {
     handleSubmitButton,
   } = useSelectGenderForm();
   return (
-    <Box className="flex flex-col items-center justify-center  mt-[17.717rem]">
+    <Box className="flex flex-col items-center justify-center sm:mt-[17.717rem] mt-0">
       <Typography
         variant="body1"
         component="h6"

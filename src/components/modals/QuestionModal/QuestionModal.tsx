@@ -57,7 +57,10 @@ export default function QuestionModal({
               height: '9.1rem',
             }}
           >
-            ❌<Typography variant="body1">No</Typography>
+            ❌
+            <Typography variant="body1" sx={{ marginTop: '0.8rem' }}>
+              No
+            </Typography>
           </Button>
           <Button
             variant="contained"
@@ -72,7 +75,10 @@ export default function QuestionModal({
               height: '9.1rem',
             }}
           >
-            ✅<Typography variant="body1">Yes</Typography>
+            ✅
+            <Typography variant="body1" sx={{ marginTop: '0.8rem' }}>
+              Yes
+            </Typography>
           </Button>
         </Box>
       </Box>

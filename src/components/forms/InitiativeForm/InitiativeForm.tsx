@@ -24,7 +24,7 @@ export default function InitiativeForm(props: OnboardingStepProps) {
     <Box className="flex flex-col items-center justify-between pt-[10.1rem] pb-[3.2rem] h-full">
       <StackedImages images={gender === 'man' ? manImages : womanImages} />
 
-      <Box className="flex flex-col items-center justify-center h-full mt-[10.1rem]">
+      <Box className="flex flex-col items-center justify-center sm:mt-[10.1rem] mt-[3.2rem]">
         <Typography
           variant="body1"
           component="h6"
@@ -54,7 +54,10 @@ export default function InitiativeForm(props: OnboardingStepProps) {
               height: '9.1rem',
             }}
           >
-            ❌<Typography variant="body1">No</Typography>
+            ❌
+            <Typography variant="body1" sx={{ marginTop: '0.8rem' }}>
+              No
+            </Typography>
           </Button>
           <Button
             variant="contained"
@@ -69,7 +72,10 @@ export default function InitiativeForm(props: OnboardingStepProps) {
               height: '9.1rem',
             }}
           >
-            ✅<Typography variant="body1">Yes</Typography>
+            ✅
+            <Typography variant="body1" sx={{ marginTop: '0.8rem' }}>
+              Yes
+            </Typography>
           </Button>
         </Box>
       </Box>

@@ -12,7 +12,7 @@ export default function OnboardingStepper() {
   const StepComponent = steps[activeStep];
 
   return (
-    <Box className="flex flex-col items-center h-[100vh] sm:h-full">
+    <Box className="flex flex-col items-center h-[100vh] sm:h-full py-[1.6rem] px-[1.6rem]">
       <Box className="flex items-center justify-center gap-[1.6rem]">
         <IconButton
           onClick={handleBack}
