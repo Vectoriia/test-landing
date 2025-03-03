@@ -2,7 +2,7 @@ import OnboardingContent from '@/src/components/page-content/OnboardingContent';
 import { redirect } from 'next/navigation';
 
 export interface OnBoardingProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export default async function OnBoarding({ params }: OnBoardingProps) {
