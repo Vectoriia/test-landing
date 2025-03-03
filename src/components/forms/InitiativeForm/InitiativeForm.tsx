@@ -32,6 +32,7 @@ export default function InitiativeForm(props: OnboardingStepProps) {
             marginBottom: '1.6rem',
             fontWeight: 700,
             textAlign: 'center',
+            maxWidth: '34.3rem',
           }}
         >
           {gender === 'man'
