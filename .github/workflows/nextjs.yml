@@ -30,11 +30,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Make envfile
-        uses: SpicyPizza/create-envfile@v1
-        with:
-          envkey_NODE_ENV: 'production'
-          file_name: .env
+      - name: Create env file
+        run: |
+          touch .env
+          echo NODE_ENV='production' >> .env
+          cat .env
 
   # Build job
   build:
