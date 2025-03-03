@@ -19,7 +19,7 @@ export default function OnboardingStepper() {
           sx={{ width: '4rem', height: '4rem', padding: '0' }}
         >
           <ArrowBackIosNewIcon
-            sx={{ width: '1.42rem', height: '1.42rem', color: '#FF4931' }}
+            sx={{ width: '2.1rem', height: '2.1rem', color: '#FF4931' }}
           />
         </IconButton>
         <LinearProgress
