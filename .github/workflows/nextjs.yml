@@ -32,10 +32,10 @@ jobs:
     steps:
       - name: Create env file
         run: |
-          touch .env
-          echo NODE_ENV='production' >> .env
-          echo NEXT_PUBLIC_BASE_PATH='/test-landing' >> .env
-          cat .env
+          touch .env.local
+          echo NODE_ENV='production' >> .env.local
+          echo NEXT_PUBLIC_BASE_PATH='/test-landing' >> .env.local
+          cat .env.local
 
   # Build job
   build:
