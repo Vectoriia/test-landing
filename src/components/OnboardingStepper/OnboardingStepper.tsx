@@ -10,12 +10,13 @@ import useOnboardingStepper from './useOnboardingStepper';
 export default function OnboardingStepper() {
   const { handleNext, handleBack, activeStep } = useOnboardingStepper();
   const StepComponent = steps[activeStep];
+
   return (
-    <Box>
+    <Box className="flex flex-col items-center h-[100vh]">
       <Box className="flex items-center justify-center gap-[1.6rem]">
         <IconButton
           onClick={handleBack}
-          sx={{ width: '4rem', height: '4rem', padding: '0px' }}
+          sx={{ width: '4rem', height: '4rem', padding: '0' }}
         >
           <ArrowBackIosNewIcon
             sx={{ width: '1.42rem', height: '1.42rem', color: '#FF4931' }}

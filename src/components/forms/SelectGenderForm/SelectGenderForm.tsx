@@ -12,7 +12,7 @@ export default function SelectGenderForm() {
     handleSubmitButton,
   } = useSelectGenderForm();
   return (
-    <Box className="flex flex-col items-center justify-center py-2">
+    <Box className="flex flex-col items-center justify-center  mt-[17.717rem]">
       <Typography
         variant="body1"
         component="h6"

@@ -70,6 +70,13 @@ const theme = createTheme({
         },
       },
     },
+    MuiCircularProgress: {
+      styleOverrides: {
+        circle: {
+          color: '#FF4931',
+        },
+      },
+    },
     MuiInputBase: {
       styleOverrides: {
         root: {

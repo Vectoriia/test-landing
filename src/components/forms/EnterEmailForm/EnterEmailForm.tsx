@@ -35,7 +35,7 @@ export default function EnterEmailForm(props: OnboardingStepProps) {
         error={!isValid && !!email}
       />
 
-      <Box className="flex items-center justify-center gap-[1.2rem] mb-[2.9rem]">
+      <Box className="flex items-center justify-center gap-[1.2rem] mb-[2.9rem] max-w-[34.3rem]">
         <InfoOutlinedIcon sx={{ width: '1.9rem', height: '1.9rem' }} />
         <Typography variant="body2" component="p">
           This information will be used for the registration process only and

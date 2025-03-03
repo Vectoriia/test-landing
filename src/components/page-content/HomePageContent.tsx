@@ -4,7 +4,7 @@ import SelectGenderForm from '../forms/SelectGenderForm/SelectGenderForm';
 
 export default function HomePageContent() {
   return (
-    <Box className="flex flex-col items-center justify-center py-[1.6rem] px-[1.6rem] gap-[17.717rem]">
+    <Box className="flex flex-col items-center justify-between pt-[1.6rem] px-[1.6rem] pb-[3.2rem] h-[100vh]">
       <Box className="flex flex-col items-center justify-center gap-[2.283rem]">
         <Box className="w-[7.4rem] h-[3rem]">
           <Image
